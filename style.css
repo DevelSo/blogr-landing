@@ -9,13 +9,33 @@
   font-family: ubunto, sans-serif;
 }
 
-body {
-    background: tomato;
+
+
+.landing_section {
+    padding:  2rem 6rem 2rem;
+    width: 100%;
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    height: 40rem;
+    border-radius: 0 0 0 7rem;
+
 }
 
+.img_background {
+    margin-top: -90rem;
+    margin-left: -50rem;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0.75);
+
+}
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .navbar {
     width: 100%;
-    margin: 2rem;
+    margin-right: 2rem;
     padding: .5rem;
     display: flex;
     justify-content: space-between;
@@ -36,10 +56,36 @@ body {
 
 .logo {
     flex-grow: 1;
+    z-index: 10;
 }
 
 .links {
-    flex-grow: 5;
+
+    flex-grow: 3;
+    z-index: 9;
+}
+
+.custome_btn {
+    background-color: white;
+    border-radius: 20rem;
+}
+.custome_btn a{
+    color: tomato;
+}
+.custome_btn a:hover{
+    color: tomato;
+}
+.custome_btn:hover {
+    background-color: rgb(255, 158, 158);
+}
+
+
+
+.btns_nav {
+    flex-grow: 2;
+    z-index: 8;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar ul{
@@ -68,6 +114,7 @@ body {
 
 .navbar ul li ul {
     background: rgba(255, 255, 255, 0.37);
+    padding: 0 1rem;
     border-radius: 15px;
     visibility: hidden;
     opacity: 0;
@@ -91,6 +138,13 @@ body {
     clear: both;
     width: 100%;
 }
+
+.content_main {
+    z-index: 7;
+    flex-grow: 3;
+    color: white;
+}
+
 
 
 
