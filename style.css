@@ -8,9 +8,9 @@
   box-sizing: border-box;
   font-family: ubunto, sans-serif;
 }
-html {
+/* html {
     overflow-x: hidden;
-}
+} */
 
 /* ------------- SECTION 1---------------- */
 
@@ -21,10 +21,11 @@ html {
 
 .landing_section {
     background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    height: 40rem;
+    height: 35rem;
     border-radius: 0 0 0 5rem;
     position: relative;
     overflow:hidden;
+    text-align: center;
 
 }
 
@@ -42,6 +43,7 @@ header {
     flex-direction: column;
     height: 100%;
 }
+
 .navbar {
     width: 100%;
     margin-right: 2rem;
@@ -191,6 +193,11 @@ header {
 
 .main1 {
     color: #44535c;
+    position: relative;
+    overflow:hidden;
+    height: 100%;
+    padding-bottom: 15rem;
+
 }
 
 .main1 h1 {
@@ -206,31 +213,34 @@ header {
     margin-top: 2rem;
     font-size: 0.9rem;
     font-weight: lighter;
+    padding-right: 30rem ;
 }
 
 .main1 h2 {
     margin-top: 2rem;
 }
 
-.section_content {
+.section_content1 {
     padding: 2rem;
     margin-top: 3rem;
-    margin-left: 2rem ;
     max-width: 35rem;
 }
 
-.background_illustration {
+.background_illustration1 {
     position: absolute;
-    margin-top: -35rem;
-    margin-left: 40rem;
-    transform: scale(0.9);
+    margin-top: -15rem;
+    margin-left: 35rem;
+    transform: scale(0.8);
 
+}
+
+.background_illustration2 {
+    display: none;
 }
 
 /* ------------- SECTION 3 ---------------- */
 
 .main2 {
-    margin-top: 12rem;
     height: 19rem;
     background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));    display: flex;
     flex-direction: row-reverse;
@@ -264,6 +274,12 @@ header {
     margin-top: -1rem;
 }
 
+.section_content2 {
+    padding: 3rem;
+    max-width: 35rem;
+
+}
+
 
 /* ------------- SECTION 3 ---------------- */
 
@@ -275,10 +291,14 @@ header {
     color: #44535c;
 }
 
-.main3 img {
+.image1 {
     transform: scale(.8);
     margin-left: -35rem;
     position: absolute;
+}
+
+.image2 {
+    display: none
 }
 
 
@@ -305,8 +325,11 @@ header {
    
 }
 
-
-
+.footer a {
+    
+    line-height: 2rem;
+    
+}
 
 .footer li  a{
     color: white;
@@ -325,5 +348,122 @@ header {
     list-style: none;
     font-weight: lighter;
     font-size: .7rem;
+}
+
+@media (max-width: 1000px) {
+    .main1 p {
+        padding-right: 50% ;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content_main {
+        padding: 0 2rem;
+    } 
+
+
+    .navbar {
+        margin-top: 1.5rem;
+    }
+
+
+    .footer {
+        padding: 4rem  10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .footer li ul a {
+        color: white;
+        text-decoration: none;
+        list-style: none;
+        font-weight: lighter;
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+
+    .footer div {
+        margin-top: 2rem;
+    }
+
+    .main3 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        color: #44535c;
+        text-align: center;
+        overflow: hidden;
+    }
+
+
+    .image1 {
+        display: none
+    }
+
+    .image2 {
+        display: block;
+        position: relative;
+        margin-top: 3rem;
+        
+    }
+
+    .main2 {
+        display: flex;
+        height: 100%;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 12rem;
+    }
+
+    .main2 img {
+        display: block;
+        margin-top: -12rem;
+        margin-bottom: -7rem;
+        transform: scale(0.9);
+        max-width: 100%;
+    }
+    
+    .main2 p {
+        padding: 0rem;
+        margin: 3rem 0rem ;
+    }
+    
+    .main1 {
+        padding: 0rem 3rem;
+    }
+    
+    .main1 p {
+        padding: 0rem;
+    }
+
+    .main1 div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .background_illustration1 {
+        display: none;
+    }
+
+    .background_illustration2 {
+        display: block;
+        position: relative;
+        margin: 0rem;
+        padding: 0rem;
+        transform: scale(0.9);
+    }
+
+
+
+
 }
 
